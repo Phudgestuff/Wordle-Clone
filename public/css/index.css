@@ -1,0 +1,43 @@
+@font-face {
+    font-family: 'ClearSans';
+    src: url('fonts/ClearSans-Bold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    background-color: black;
+    min-height: 100vh;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.board {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+
+.word-row {
+    display: flex;
+    flex-direction: row;
+    column-gap: 10px;
+}
+
+.letter-box {
+    height: 100px;
+    width: 100px;
+    background: transparent;
+    border: solid 2px rgba(132, 130, 130, 0.5);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 60px;
+    font-family: 'ClearSans', sans-serif;
+    font-weight: bold;
+
+    transition: transform 0.1s ease-in-out;
+}

@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<head>
+    <link rel="stylesheet" href="/css/index.css">
+</head>
+<body>
+    <div class="board"> 
+        <% 6.times do |row_num| %>
+            <div class="word-row">
+                <% 5.times do |col_num| %>
+                    <div class="letter-box" id="lb-<%= row_num %>-<%= col_num %>"></div>
+                <% end %>
+            </div>
+        <% end %>
+    </div>
+
+    <script>let word = "<%= @word %>".toUpperCase(); </script>
+    <script src="/js/index.js"></script>
+</body>
